@@ -1,29 +1,42 @@
+@import "colors";
+
 body{
     margin: 0px;
     border: none;
     padding: 0px;
-    color: light-green;
+    background-color: $back-color;
 }
 
 .header{
     margin: 0px;
     border: none;
     padding: 0px;
-}
-.components{
-    margin: 0px;
-    border: none;
-    padding: 2ex;
-    text-align: right;
-    background-color: black;
-    margin:0;
-    a{
-        padding: 1em;
-        font-weight: bold;
-        color: white;
-        text-decoration: none;
-        &:hover{
-            color: green;
-        }
+    background-color: $header-back;
+    color: $header-color;
+    display: flex;
+    justify-content: space-between;
+    .icon{
+        display: inline-block;
+    };
+    .components{
+        padding: 2ex 0px;
+        text-align: right;
+        margin:0;
+        display: inline-block;
+        a{
+            color: inherit;
+            padding:  0px 1em;
+            font-weight: bold;
+            text-decoration: none;
+            &:hover{
+                color: $back-color;
+            }
+        };
     }
+}
+
+
+.main{
+    margin: auto;
+    width: 50em;
 }

@@ -2,31 +2,40 @@ body {
   margin: 0px;
   border: none;
   padding: 0px;
-  color: light-green;
+  background-color: #cfc;
 }
 
 .header {
   margin: 0px;
   border: none;
   padding: 0px;
+  background-color: #000;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
 }
-
-.components {
-  margin: 0px;
-  border: none;
-  padding: 2ex;
+.header .icon {
+  display: inline-block;
+}
+.header .components {
+  padding: 2ex 0px;
   text-align: right;
-  background-color: black;
   margin: 0;
+  display: inline-block;
 }
-.components a {
-  padding: 1em;
+.header .components a {
+  color: inherit;
+  padding: 0px 1em;
   font-weight: bold;
-  color: white;
   text-decoration: none;
 }
-.components a:hover {
-  color: green;
+.header .components a:hover {
+  color: #cfc;
+}
+
+.main {
+  margin: auto;
+  width: 50em;
 }
 
 /*# sourceMappingURL=style.css.map */
