@@ -13,6 +13,8 @@ body {
   color: #ffffff;
   display: flex;
   justify-content: space-between;
+  font-family: "Montserrat";
+  font-weight: bold;
 }
 .header .icon {
   display: inline-block;
@@ -26,7 +28,6 @@ body {
 .header .components a {
   color: inherit;
   padding: 0px 1em;
-  font-weight: bold;
   text-decoration: none;
 }
 .header .components a:hover {
@@ -34,8 +35,13 @@ body {
 }
 
 .main {
+  font-family: "Open Sans";
+  text-align: justify;
   margin: auto;
   width: 50em;
+}
+.main h1 {
+  font-family: "Montserrat";
 }
 
 /*# sourceMappingURL=style.css.map */
