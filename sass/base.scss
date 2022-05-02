@@ -1,0 +1,29 @@
+body{
+    margin: 0px;
+    border: none;
+    padding: 0px;
+    color: light-green;
+}
+
+.header{
+    margin: 0px;
+    border: none;
+    padding: 0px;
+}
+.components{
+    margin: 0px;
+    border: none;
+    padding: 2ex;
+    text-align: right;
+    background-color: black;
+    margin:0;
+    a{
+        padding: 1em;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+        &:hover{
+            color: green;
+        }
+    }
+}

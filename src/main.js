@@ -1,5 +1,15 @@
-const m = require('mithril');
+const m = require("mithril");
+const head = require("./header");
 
-var root = document.body
-
-m.render(root, "Hello world")
+m.route(document.body, "/",{
+    "/":{
+        render: function(){
+            return m(head,m("h1", "Hello world"));
+        }
+    },
+    "/undone":{
+        render:function(){
+            return m("h1","UNFINISHED");
+        }
+    }
+});
