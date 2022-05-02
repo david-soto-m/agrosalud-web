@@ -4,7 +4,7 @@ module.exports = {
     view: function(vnode) {
         return [
             m("nav.header",[
-                m("div.icon", "Icon here"),
+                m("div.icon", m("img", {src: "agro_logo/agro_logo.svg", width: "50"})),
                 m("div.components", [
                     m(m.route.Link, {href: "/"},"Inicio"),
                     m(m.route.Link, {href: "/services"},"Servicios"),
