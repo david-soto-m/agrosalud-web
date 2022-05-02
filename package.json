@@ -1,0 +1,32 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "Landing page for uni clases",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Landing",
+    "mithril",
+    "sass"
+  ],
+  "author": "Alejandro, Alicia, David, Isabel",
+  "license": "Unlicense",
+  "dependencies": {
+    "electron": "^16.0.6",
+    "mithril": "^2.0.4"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "sass": "^1.48.0",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
+  },
+  "scripts": {
+    "webpack": "webpack",
+    "sass": "sass sass/base.scss build/style.css",
+    "lint": "eslint src/* electron/*.js --fix",
+    "start": "npm run lint && npm run sass && npm run webpack"
+  }
+}
