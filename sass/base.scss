@@ -15,6 +15,8 @@ body{
     color: $header-color;
     display: flex;
     justify-content: space-between;
+    font-family: 'Montserrat';
+    font-weight: bold;
     .icon{
         display: inline-block;
     };
@@ -26,7 +28,6 @@ body{
         a{
             color: inherit;
             padding:  0px 1em;
-            font-weight: bold;
             text-decoration: none;
             &:hover{
                 color: $back-color;
@@ -36,7 +37,14 @@ body{
 }
 
 
+
+
 .main{
+    h1 {
+        font-family: 'Montserrat';
+    }
+    font-family: 'Open Sans';
+    text-align: justify;
     margin: auto;
     width: 50em;
 }
