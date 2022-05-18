@@ -37,12 +37,82 @@ body {
 .main {
   font-family: "Open Sans";
   text-align: justify;
-  margin: auto;
-  width: 50em;
+  margin: 0px;
+  width: 100vw;
 }
 .main h1 {
   font-family: "Montserrat";
   font-weight: 900;
+  font-size: 3em;
+  text-align: center;
+}
+@media (min-width: 45em) {
+  .main h1 {
+    font-size: 5em;
+  }
+}
+.main iframe {
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  border: none;
+}
+.main .text {
+  padding: 3em;
+  margin: auto;
+}
+@media (min-width: 50em) {
+  .main .text {
+    width: 50em;
+  }
+}
+.main .consult_button {
+  background-color: #000;
+  color: #ffffff;
+  border-radius: 10%;
+  text-decoration: none;
+  padding: 0.5em 1em;
+}
+.main .consult_button:hover {
+  color: #cfc;
+}
+.main .fcont {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5vw;
+  margin: auto;
+}
+.main .fcont img {
+  width: 100vw;
+}
+@media (min-width: 512px) {
+  .main .fcont img {
+    width: 40vw;
+  }
+}
+.main .fcont .half_text_r {
+  text-align: right;
+}
+@media (min-width: 512px) {
+  .main .fcont .half_text_r {
+    width: 40vw;
+  }
+}
+.main .fcont .half_text_r p {
+  text-align: justify;
+}
+.main .fcont .half_text_l {
+  text-align: left;
+}
+@media (min-width: 512px) {
+  .main .fcont .half_text_l {
+    width: 40vw;
+  }
+}
+.main .fcont .half_text_l p {
+  text-align: justify;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,37 +1,39 @@
 const m = require("mithril");
 const head = require("./header");
+const serv = require("./services");
 
 m.route(document.body, "/",{
     "/":{
         render: function(){
-            return m(head, m("h1", "Agrosalud"));
+            return m(head, [
+                m("h1.init","Agrosalud"),
+                m("iframe",{
+                    "src":"https://www.youtube.com/embed/ORCGT-gPi44",
+                    "title":"Video Agrosalud",
+                    "allow":"accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
+                    "allowfullscreen":"allowfullscreen",
+                    "frameborder":"0"
+                })
+            ]);
         }
     },
     "/services":{
         render: ()=>{
-            return m(head, m("h1", "Servicios"));
+            return m(head, m(serv));
         }
     },
     "/about":{
         render: ()=>{
-            return m(head, [
+            return m(head, m("div.text",[
                 m("h1", "Sobre nosotros"),
-                m("",
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do"+
-                    "eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempus"+
-                    "iaculis urna id volutpat lacus. Arcu non sodales neque sodales ut."+
-                    "Quis risus sed vulputate odio ut enim blandit. Duis at tellus at urna."+
-                    "Arcu dui vivamus arcu felis. Tellus rutrum tellus pellentesque eu"+
-                    "tincidunt tortor aliquam. In pellentesque massa placerat duis ultricies"+
-                    "lacus sed. Neque laoreet suspendisse interdum consectetur libero id"+
-                    "faucibus. Lorem ipsum dolor sit amet consectetur adipiscing. A iaculis"+
-                    "at erat pellentesque adipiscing commodo. Accumsan lacus vel facilisis"+
-                    "volutpat est velit egestas dui. Eu tincidunt tortor aliquam nulla facilisi."+
-                    "Ultrices neque ornare aenean euismod elementum nisi quis eleifend."+
-                    "Sagittis vitae et leo duis ut diam quam nulla. Praesent semper feugiat"+
-                    "nibh sed pulvinar. Nulla facilisi cras fermentum odio eu feugiat pretium nibh ipsum."
-                )
-            ]);
+                m("p", "Somos un grupo de alumnos de máster de la universidad de "+
+                "Sevilla que queremos traer tecnología puntera en la industria "+
+                "al campo. Queremos reducir los costes y el impacto ambiental de la "+
+                "agricultura y empoderar a los agricultores en  sus negociaciones "+
+                "de formas similares a como se hace ya en muchas industrias."
+                ),
+
+            ]));
         }
     },
     "/undone":{

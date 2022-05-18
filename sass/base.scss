@@ -1,5 +1,15 @@
 @import "colors";
 
+@mixin flex2($side){
+    @media(min-width: 512px){
+                    width: 50vw - 10vw;
+            }
+            text-align: $side;
+            p {
+                text-align: justify;
+            }
+}
+
 body{
     margin: 0px;
     border: none;
@@ -40,12 +50,61 @@ body{
 
 
 .main{
+    font-family: 'Open Sans';
+    text-align: justify;
+    margin: 0px; // for text we will have to specify the auto margin and width = 80em
+    width: 100vw;
     h1 {
         font-family: 'Montserrat';
         font-weight: 900;
+        @media(min-width: 45em){
+            font-size: 5em
+        }
+        font-size: 3em;
+        text-align: center;
     }
-    font-family: 'Open Sans';
-    text-align: justify;
-    margin: auto;
-    width: 50em;
+    iframe {
+        width: 100vw;
+        height: 100vh;
+        margin: auto;
+        border: none;
+    }
+    .text{
+    padding: 3em;
+        @media(min-width: 50em){
+            width: 50em;
+        }
+        margin: auto;
+    }
+    .consult_button{
+        background-color: $header-back;
+        color: $header-color;
+        border-radius: 10%;
+        text-decoration: none;
+        padding: 0.5em 1em;
+        &:hover{
+            color: $back-color;
+        }
+
+    }
+    .fcont{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5vw;
+        margin: auto;
+        img {
+            @media(min-width: 512px){
+                width: 50vw - 10vw;
+            }
+            width: 100vw;
+        }
+        .half_text_r{
+            @include flex2(right);
+        }
+        .half_text_l{
+            @include flex2(left);
+        }
+    }
 }
