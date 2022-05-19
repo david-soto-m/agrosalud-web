@@ -2,12 +2,12 @@
 
 @mixin flex2($side){
     @media(min-width: 1024px){
-                    width: 50vw - 10vw;
-            }
-            text-align: $side;
-            p {
-                text-align: justify;
-            }
+        width: 50vw - 10vw;
+    }
+    text-align: $side;
+    p {
+        text-align: justify;
+    }
 }
 
 body{
@@ -99,6 +99,7 @@ body{
                 width: 50vw - 10vw;
             }
             width: 100vw;
+            height: auto;
         }
         .half_text_r{
             @include flex2(right);
