@@ -87,7 +87,7 @@ body {
 .main .fcont img {
   width: 100vw;
 }
-@media (min-width: 512px) {
+@media (min-width: 1024px) {
   .main .fcont img {
     width: 40vw;
   }
@@ -95,7 +95,7 @@ body {
 .main .fcont .half_text_r {
   text-align: right;
 }
-@media (min-width: 512px) {
+@media (min-width: 1024px) {
   .main .fcont .half_text_r {
     width: 40vw;
   }
@@ -106,7 +106,7 @@ body {
 .main .fcont .half_text_l {
   text-align: left;
 }
-@media (min-width: 512px) {
+@media (min-width: 1024px) {
   .main .fcont .half_text_l {
     width: 40vw;
   }

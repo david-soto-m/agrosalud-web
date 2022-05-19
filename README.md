@@ -6,6 +6,7 @@ una página que enseñar
 
 ## Stack
 - [Mithril](https://mithril.js.org/)
+- [babel](https://babeljs.io/)
 - [Sass](https://sass-lang.com/) [tutorial](https://www.w3schools.com/sass/default.php)
 - [Webpack](https://webpack.js.org/)
 - [Eslint](https://eslint.org/)

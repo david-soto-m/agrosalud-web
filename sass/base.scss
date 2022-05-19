@@ -1,7 +1,7 @@
 @import "colors";
 
 @mixin flex2($side){
-    @media(min-width: 512px){
+    @media(min-width: 1024px){
                     width: 50vw - 10vw;
             }
             text-align: $side;
@@ -95,7 +95,7 @@ body{
         padding: 5vw;
         margin: auto;
         img {
-            @media(min-width: 512px){
+            @media(min-width: 1024px){
                 width: 50vw - 10vw;
             }
             width: 100vw;
